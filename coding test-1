@@ -1,0 +1,72 @@
+20.Write a program to create a new string repeating every character twice of a 
+given string
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		int n=s.length();
+		String r="";
+		for(int i=0;i<n;i++)
+		{
+		    for(int j=0;j<2;j++)
+		    {
+		        r+=s.charAt(i);
+		    }
+		    
+		}
+		System.out.print(r);
+		
+	
+		
+		   
+	}
+}
+19.Write a program to find maximum between two string
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		String v=sc.next();
+		int n=s.length();
+		if(s==v)
+		{
+		    System.out.print("two strings are equal");
+		}
+		else
+		{
+		    int i=0,j=0;
+		    while(i<s.length() && j<v.length()){
+		        if(s.charAt(i)==v.charAt(j))
+		        {
+		            i++;
+		            j++;
+		        }
+		        else
+		        {
+		            if(s.charAt(i)>v.charAt(j))
+		            {
+		                System.out.print("string 1 is greater than string 2");
+		                break;
+		            }
+		            else
+		            {
+		                System.out.print("string 1 is less than string 2");
+		                break;
+		            }
+		        }
+		        
+		    }
+		}
+	
+	
+	
+		
+		   
+	}
+}
